@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font-awesome kit -->
+    <script src="https://kit.fontawesome.com/2e1c9e3d59.js" crossorigin="anonymous"></script>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind config -->
@@ -22,10 +24,37 @@
           }
         }
       </script>
+      <style>
+        .font-manrope{
+            font-family: "Manrope"; 
+        }
+      </style>
 </head>
 <body class="font-manrope">
-    <header>
-
+    <header class="md:pr-12 md:pt-8 md:pl-28 max-sm:pl-8 max-sm:pt-6">
+        <!-- Banner items container -->
+       <div class="md:flex justify-around">
+        <div>
+            <h1 class="font-extrabold text-7xl mb-8">It's good <br> 
+                tea time at The <br> Tea House</h1>
+            <p class="font-medium text-lg text-[#777777] mb-8">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+            <button class="font-bold text-xl text-[#FFFFFF] bg-gradient-to-r from-[#FF0000] to-[#FF8938] px-4 py-4 rounded-lg ">Explore More <i class="fa-solid fa-arrow-right  -rotate-45"></i></button>
+        </div>
+        <div class="relative">
+            <!-- image content -->
+            <div><img src="images/banner.png" alt=""></div>
+            <!-- badge card container -->
+            <div class="flex items-center gap-2 bg-[#FFFFFF] drop-shadow-2xl md:py-5 md:px-6 max-sm:py-2 max-sm:px-3 absolute md:left-24 top-36 md:top-96 rounded-lg ">
+                <!-- icon -->
+                 <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+                <!--ratings  -->
+                 <div>
+                    <h3 class="font-extrabold text-2xl">5.00</h3>
+                    <p class="font-semibold text-base text-[#777777]">Trust Pilot Ratings</p>
+                 </div>
+            </div>
+        </div>
+       </div>
     </header>
     <main>
 
